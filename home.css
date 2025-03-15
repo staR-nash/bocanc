@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:#090b2f;
+    background-color:#0d1b2a;
     color:white;
 }
 a {
@@ -113,6 +113,9 @@ a {
     margin: 40px;
 }
 .randuri{
+    display:flex;
+    text-align:center;
+    justify-content:center;
     width: 450px;
     background-color:rgb(0, 0, 0) ;
     padding:15px;
@@ -122,51 +125,31 @@ a {
 .rand1{
     display: flex;
     flex:1;
+    justify-content: center;
     gap:35px;
-    text-align: left;
+    text-align: center;
     letter-spacing: 2px;
-    margin-left: 90px;
-    margin-right: 20px;
+    margin-left: 55px;
+    margin-right: 55px;
     margin-top: 40px;
 }
 .rand2{
     display: flex;
     flex:1;
-    gap:30px;
-    margin-left: 30px;
-    margin-right: 30px;
     justify-content: center;
+    gap:35px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 40px;
 }
 
 .rand2 img{
     transition: width ease-in 1s;
 }
 .rand2 img:hover{
-    box-shadow: 0 5px 15px #9461c7;
-}
-.rand4 img{
-    transition: width ease-in 1s;
-}
-.rand4 img:hover{
-    box-shadow: 0 5px 15px #9461c7;
-}
-
-.rand3{
-    display: flex;
-    flex:1;
-    gap:35px;
-    text-align: left;
-    letter-spacing: 2px;
-    margin-left: 90px;
-    margin-right: 20px;
-}
-.rand4{
-    display: flex;
-    flex:1;
-    gap:30px;
-    margin-left: 30px;
-    margin-right: 30px;
-    justify-content: center;
+    box-shadow: 0 5px 15px #68329d;
 }
 .background{
     background-image: url(/maini.jpg);
@@ -185,16 +168,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #9f9797; 
-    padding: 5px 5px;
-    border-radius: 80px;
-    
+    background-color: #0a0f1e; 
+    box-shadow: 0 0 5px #472a64, 0 0 60px #472a64, 0 0 20px #472a64;
+    padding: 10px;
+    margin:30px;
+    border-radius: 80px;    
 }
 .text {
     flex: 1;
     padding: 20px;
     font-size: 18px;
-    color: black;
+    color: white;
 }
 .image {
     flex: 1;
@@ -223,12 +207,12 @@ a {
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #9461c7;   
+    background: #68329d;   
   }
 
   
 .randuri:hover {
-    color: #9461c7 !important;
+    color: #68329d !important;
     font-weight: bolder;
-    text-shadow: 0 0 10px rgba(101, 114, 252, 0.8);
+    text-shadow: 0 0 10px rgba(162, 116, 215, 0.7);
 }
