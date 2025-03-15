@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:#090b2f;
+    background-color:#282628;
     color:white;
 }
 a {
@@ -80,7 +80,7 @@ a {
     color:black;
 }
 .a:hover{
-    color:rgb(0, 0, 0);
+    color:black;
 }
 .a:active{
     color: black;
@@ -112,7 +112,7 @@ a {
     background-color:rgb(0, 0, 0) ;
     padding:15px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgb(31, 28, 68);
+    box-shadow: 0 5px 15px rgb(92, 88, 88);
 }
 .rand1{
     display: flex;
@@ -151,7 +151,7 @@ a {
 }
 .background{
     background-image: url(/maini.jpg);
-    background-color: #1585d5;
+    background-color: #070707;
     background-size: cover;
     width:100%;
     height:700px;
@@ -166,15 +166,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-    background-color: #ffffff; 
-    padding: 60px 80px;
-=======
     background-color: #9f9797; 
-    padding: 5px 5px;
->>>>>>> dd34de03437d5675ec4d3f684dac54410493a09c
+    padding: 60px 80px;
     border-radius: 80px;
-    
 }
 .text {
     flex: 1;
@@ -202,20 +196,12 @@ a {
   }
   
   ::-webkit-scrollbar-track {
-    background: #090b2f;
+    background: #4a296a;
   }
   ::-webkit-scrollbar-thumb {
-    background: #472a64;
+    background: #623a8a;
   }
   
   ::-webkit-scrollbar-thumb:hover {
     background: #9461c7;   
   }
-<<<<<<< HEAD
-=======
-
-  
-.randuri:hover {
-    color: #9461c7 !important;
-}
->>>>>>> c4fb106b60cff3dfdf67a4172a1dd3bb005086b5
