@@ -169,8 +169,6 @@ a {
     background-color: #ffffff; 
     padding: 60px 80px;
     border-radius: 80px;
-    
-
 }
 .text {
     flex: 1;
@@ -190,3 +188,20 @@ a {
     border-radius: 80px;
    
 }
+
+
+  /* scroll-bar:'> */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #4a296a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #623a8a;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9461c7;   
+  }
