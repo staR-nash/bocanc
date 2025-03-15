@@ -166,9 +166,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
     background-color: #ffffff; 
     padding: 60px 80px;
+=======
+    background-color: #9f9797; 
+    padding: 5px 5px;
+>>>>>>> dd34de03437d5675ec4d3f684dac54410493a09c
     border-radius: 80px;
+    
 }
 .text {
     flex: 1;
