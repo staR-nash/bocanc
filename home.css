@@ -27,6 +27,10 @@ a {
     font-family: "Rowdies", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color:rgb(165, 165, 165);
+  }
+  .rowdies-bold:hover{
+    color:white;
   }
   .container {
     display: flex;
@@ -53,6 +57,7 @@ a {
     color:white;
 
 }
+
 .link{
     flex:1;
     display: flex;
@@ -132,6 +137,20 @@ a {
     margin-right: 30px;
     justify-content: center;
 }
+
+.rand2 img{
+    transition: width ease-in 1s;
+}
+.rand2 img:hover{
+    box-shadow: 0 5px 15px #9461c7;
+}
+.rand4 img{
+    transition: width ease-in 1s;
+}
+.rand4 img:hover{
+    box-shadow: 0 5px 15px #9461c7;
+}
+
 .rand3{
     display: flex;
     flex:1;
@@ -166,13 +185,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-    background-color: #ffffff; 
-    padding: 60px 80px;
-=======
     background-color: #9f9797; 
     padding: 5px 5px;
->>>>>>> dd34de03437d5675ec4d3f684dac54410493a09c
     border-radius: 80px;
     
 }
@@ -215,4 +229,6 @@ a {
   
 .randuri:hover {
     color: #9461c7 !important;
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgba(101, 114, 252, 0.8);
 }
