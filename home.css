@@ -40,8 +40,8 @@ p#sidehero{
 .section1{
     justify-content:center;
     padding:30px 89px;
-    height: 330px;
-    background-color: white;
+    height: 180px;
+    background-color: white;background-image: radial-gradient(circle at center, #c3b0d7 20%, #b79ad4 50%, #a165dd 100%);    
     color:black;
     text-indent:20px;
     font-size:18px;
@@ -54,6 +54,16 @@ p#sidehero{
     justify-content: center;
     flex-wrap:wrap;
     gap: 50px;
+  }
+
+  .section2{
+    justify-content:center;
+    padding:30px 89px;
+    height: 340px;    
+    color:black;
+    text-indent:20px;
+    font-size:18px;
+    background-color:white;       
   }
 
   .inline-list li {
@@ -80,7 +90,7 @@ p#sidehero{
   }
   
   .inline-list li:nth-child(even) {
-    background: linear-gradient(135deg, #1585d5, #0a0f1e);
+    background: linear-gradient(135deg, #2e6cb0, #0d1b2a);
     color: white;
   }
   
