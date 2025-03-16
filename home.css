@@ -1,8 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
 body{
     margin: 0;
     padding: 0;
-    background-color:#0d1b2a;
+    background-color:#282628;
     color:white;
 }
 a {
@@ -10,9 +9,6 @@ a {
    color: azure;
 
 
-}
-p a:hover{
-    text-decoration:underline;
 }
 
 p#herosection{
@@ -41,6 +37,54 @@ p#sidehero{
     font-size:18px;
 }
 
+.section1{
+    justify-content:center;
+    padding:30px 89px;
+    height: 330px;
+    background-color: white;
+    color:black;
+    text-indent:20px;
+    font-size:18px;
+}
+
+.inline-list {
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 50px;
+  }
+
+  .inline-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+    height: 130px;
+    width: 200px;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: transform 1s ease-in-out;
+}
+
+.inline-list li:hover {
+    transform: scale(1.1); 
+}
+
+.inline-list li:nth-child(odd) {
+    background: linear-gradient(to top left, #68329d, #000000);
+    color: white;
+  }
+  
+  .inline-list li:nth-child(even) {
+    background: linear-gradient(135deg, #1585d5, #0a0f1e);
+    color: white;
+  }
+  
+
 .homecontent p{
     font-size:243px;
 }
@@ -55,15 +99,11 @@ p#sidehero{
     font-weight: 400;
     font-style: normal;
   }
+  
   .rowdies-bold {
     font-family: "Rowdies", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size:18px;
-    color:rgb(165, 165, 165);
-  }
-  .rowdies-bold:hover{
-    color:white;
   }
   .container {
     display: flex;
@@ -78,6 +118,7 @@ p#sidehero{
     align-items: center;
     border: #070707;
     position: relative;
+    top: -120px;
 }
 .nav{
     display:flex;
@@ -87,6 +128,7 @@ p#sidehero{
     padding: 30px;
     height: 10px;
     color:white;
+
 }
 .link{
     flex:1;
@@ -115,7 +157,7 @@ p#sidehero{
     color:black;
 }
 .a:hover{
-    color:rgb(0, 0, 0);
+    color:black;
 }
 .a:active{
     color: black;
@@ -143,53 +185,55 @@ p#sidehero{
     margin: 40px;
 }
 .randuri{
-    display:flex;
-    text-align:center;
-    justify-content:center;
     width: 450px;
     background-color:rgb(0, 0, 0) ;
     padding:15px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgb(31, 28, 68);
+    box-shadow: 0 5px 15px rgb(92, 88, 88);
 }
 .rand1{
     display: flex;
     flex:1;
-    justify-content: center;
     gap:35px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 2px;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: 90px;
+    margin-right: 20px;
     margin-top: 40px;
 }
 .rand2{
     display: flex;
     flex:1;
+    gap:30px;
+    margin-left: 30px;
+    margin-right: 30px;
     justify-content: center;
+}
+.rand3{
+    display: flex;
+    flex:1;
     gap:35px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 2px;
-    margin-left: 55px;
-    margin-right: 55px;
-    margin-top: 40px;
+    margin-left: 90px;
+    margin-right: 20px;
 }
-
-.rand2 img{
-    transition: width ease-in 1s;
-}
-.rand2 img:hover{
-    box-shadow: 0 5px 15px #68329d;
+.rand4{
+    display: flex;
+    flex:1;
+    gap:30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
 }
 .background{
     background-image: url(/maini.jpg);
-    background-color: #158
-    5d5;
+    background-color: #070707;
     background-size: cover;
     width:100%;
     height:700px;
     display: flex;
-    align-items:top;
+    align-items:center;
     justify-content: center;
     color:white;
     font-size: 24px;
@@ -199,17 +243,16 @@ p#sidehero{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #0a0f1e; 
-    box-shadow: 0 0 5px #472a64, 0 0 60px #472a64, 0 0 20px #472a64;
-    padding: 10px;
-    margin:30px;
-    border-radius: 80px;    
+    background-color: #9f9797; 
+    padding: 5px 5px;
+    border-radius: 80px;
+
 }
 .text {
     flex: 1;
     padding: 20px;
     font-size: 18px;
-    color: white;
+    color: black;
 }
 .image {
     flex: 1;
@@ -225,31 +268,67 @@ p#sidehero{
 }
 
 
-  /* scroll-bar:'> */
 ::-webkit-scrollbar {
     width: 8px;
   }
   
   ::-webkit-scrollbar-track {
-    background: #090b2f;
+    background: #4a296a;
   }
   ::-webkit-scrollbar-thumb {
-    background: #472a64;
+    background: #623a8a;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #68329d;   
+    background: #9461c7;   
   }
-.button{
-    border: 2px solid #250644;
-    background-color: #1f021f;
-    color:white;
-    padding: 10px;
-}
+footer {
+    margin-top: auto;
+        background: #111;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        width: 100%;
+    }
+    footer {
+        background: #111;
+        color: white;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .footerdiv {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 10px 20px;
+    }
+    
+    .footerstanga img {
+        width: 200px; 
+    }
+    
+    .footercentru {
+        text-align: center;
+        flex: 1;
+    }
+    
+    .footerlink {
+        margin: 10px 0;
+    }
+    
+    .footerdreapta {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .social-link {
+        display: flex;
+        align-items: center;  
+        gap: 8px;
+    }
 
-  
-.randuri:hover {
-    color: #68329d !important;
-    font-weight: bolder;
-    text-shadow: 0 0 10px rgba(162, 116, 215, 0.7);
-}
+    
