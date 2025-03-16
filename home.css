@@ -41,6 +41,79 @@ p#sidehero{
     font-size:18px;
 }
 
+.section1{
+    justify-content:center;
+    padding:30px 89px;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    height: 330px;
+    color:black;
+    text-indent:20px;
+    height: 180px;
+    background-image: radial-gradient(circle at center, #c3b0d7 20%, #b79ad4 50%, #a165dd 100%);    
+    font-size:18px;
+}
+.section2{
+    justify-content:center;
+    padding:30px 89px;
+    height: 340px;    
+    color:black;
+    text-indent:20px;
+    font-size:18px;
+    background-color:white;       
+  }
+=======
+    color:black;
+    text-indent:20px;
+    font-size:18px;
+=======
+    color:black;
+    text-indent:20px;
+    font-size:18px;
+>>>>>>> Stashed changes
+    height: 180px;
+    background-image: radial-gradient(circle at center, #c3b0d7 20%, #b79ad4 50%, #a165dd 100%); 
+}
+>>>>>>> Stashed changes
+
+.inline-list {
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 50px;
+  }
+
+  .inline-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+    height: 130px;
+    width: 200px;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: transform 1s ease-in-out;
+}
+
+.inline-list li:hover {
+    transform: scale(1.1); 
+}
+
+.inline-list li:nth-child(odd) {
+    background: linear-gradient(to top left, #68329d, #000000);
+    color: white;
+  }
+  
+  .inline-list li:nth-child(even) {
+    background: linear-gradient(135deg, #1585d5, #0a0f1e);
+    color: white;
+  }
+  
+
 .homecontent p{
     font-size:243px;
 }
@@ -183,7 +256,8 @@ p#sidehero{
 }
 .background{
     background-image: url(/maini.jpg);
-    background-color: #1585d5;
+    background-color: #158
+    5d5;
     background-size: cover;
     width:100%;
     height:700px;
@@ -251,20 +325,52 @@ p#sidehero{
     color: #68329d !important;
     font-weight: bolder;
     text-shadow: 0 0 10px rgba(162, 116, 215, 0.7);
-flex: 1;
 }
-
-.footerlink {
-    margin: 10px 0;
-}
-
-.footerdreapta {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-.social-link {
-    display: flex;
-    align-items: center;  
-    gap: 8px;
-}
+footer {
+    margin-top: auto;
+        background: #111;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        width: 100%;
+    }
+    footer {
+        background: #111;
+        color: white;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .footerdiv {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 10px 20px;
+    }
+    
+    .footerstanga img {
+        width: 200px; 
+    }
+    
+    .footercentru {
+        text-align: center;
+        flex: 1;
+    }
+    
+    .footerlink {
+        margin: 10px 0;
+    }
+    
+    .footerdreapta {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .social-link {
+        display: flex;
+        align-items: center;  
+        gap: 8px;
+    }
