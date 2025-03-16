@@ -11,6 +11,9 @@ a {
 
 
 }
+p a:hover{
+    text-decoration:underline;
+}
 
 p#herosection{
     position:absolute;
@@ -28,6 +31,16 @@ p#sidehero{
     transform: translate(110%, 1000%);
 }
 
+.section{
+    justify-content:center;
+    padding:90px 389px;
+    height: 280px;
+    background-color:#0d1b2a;
+    background-image: conic-gradient(from 130deg, #68329d 0%, #0a0f1e 50%, #68329d 100%);
+    text-indent:20px;
+    font-size:18px;
+}
+
 .homecontent p{
     font-size:243px;
 }
@@ -42,7 +55,6 @@ p#sidehero{
     font-weight: 400;
     font-style: normal;
   }
-  
   .rowdies-bold {
     font-family: "Rowdies", sans-serif;
     font-weight: 700;
@@ -171,7 +183,8 @@ p#sidehero{
 }
 .background{
     background-image: url(/maini.jpg);
-    background-color: #1585d5;
+    background-color: #158
+    5d5;
     background-size: cover;
     width:100%;
     height:700px;
