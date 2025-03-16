@@ -62,19 +62,6 @@ p#sidehero{
     font-size:18px;
     background-color:white;       
   }
-=======
-    color:black;
-    text-indent:20px;
-    font-size:18px;
-=======
-    color:black;
-    text-indent:20px;
-    font-size:18px;
->>>>>>> Stashed changes
-    height: 180px;
-    background-image: radial-gradient(circle at center, #c3b0d7 20%, #b79ad4 50%, #a165dd 100%); 
-}
->>>>>>> Stashed changes
 
 .inline-list {
     list-style: none; 
