@@ -41,6 +41,54 @@ p#sidehero{
     font-size:18px;
 }
 
+.section1{
+    justify-content:center;
+    padding:30px 89px;
+    height: 330px;
+    background-color: white;
+    color:black;
+    text-indent:20px;
+    font-size:18px;
+}
+
+.inline-list {
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 50px;
+  }
+
+  .inline-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px;
+    height: 130px;
+    width: 200px;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: transform 1s ease-in-out;
+}
+
+.inline-list li:hover {
+    transform: scale(1.1); 
+}
+
+.inline-list li:nth-child(odd) {
+    background: linear-gradient(to top left, #68329d, #000000);
+    color: white;
+  }
+  
+  .inline-list li:nth-child(even) {
+    background: linear-gradient(135deg, #1585d5, #0a0f1e);
+    color: white;
+  }
+  
+
 .homecontent p{
     font-size:243px;
 }
