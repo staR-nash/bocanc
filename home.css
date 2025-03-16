@@ -183,8 +183,7 @@ p#sidehero{
 }
 .background{
     background-image: url(/maini.jpg);
-    background-color: #158
-    5d5;
+    background-color: #1585d5;
     background-size: cover;
     width:100%;
     height:700px;
@@ -252,4 +251,20 @@ p#sidehero{
     color: #68329d !important;
     font-weight: bolder;
     text-shadow: 0 0 10px rgba(162, 116, 215, 0.7);
+flex: 1;
+}
+
+.footerlink {
+    margin: 10px 0;
+}
+
+.footerdreapta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.social-link {
+    display: flex;
+    align-items: center;  
+    gap: 8px;
 }
