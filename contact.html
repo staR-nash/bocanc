@@ -6,55 +6,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="home.css" />
     <link rel="icon" type="image/x-icon" href="1-removebg-preview-without-text.PNG">
-    <style>
-      body {
-        background-color: #121212 !important;
-        color: white;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .contact-form {
-        max-width: 400px;
-        margin: 40px auto;
-        padding: 20px;
-        background: #1e1e1e;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-      }
-      .contact-form h2 {
-        text-align: center;
-      }
-      label,
-      input,
-      textarea,
-      button {
-        display: block;
-        width: 100%;
-        margin-bottom: 15px;
-      }
-      input,
-      textarea {
-        background: #333;
-        border: 1px solid #444;
-        padding: 10px;
-        color: white;
-        border-radius: 5px;
-        margin-left:-10px;
-      }
-      button {
-        background: #ff9800;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-      }
-      button:hover {
-        background: #e68900;
-      }
-    </style>
+    <link rel="stylesheet" href="contact.css">
   </head>
   <body>
     <div class="nav">
@@ -70,18 +22,42 @@
       </div>
     </div>
 
-    <form class="contact-form">
-      <h2>Contactează-ne</h2>
-      <label for="name">Nume și Prenume</label>
-      <input type="text" id="name" name="name" required />
+   
+  <div class="contact3">
+    <form class="contact-form"
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbxJlSsR_pPEBETOVKV5SsKDPUeZwUJhR46A86czXPlrWpIYMITyJbf_knQ9ko3MQpXk/exec"
+>
+  <h2 style="text-align: center;">Contactează-ne</h2>
+  <br>
+  <div class="cont1">
+    <h3>Nume</h3> 
+    <h3>Prenume</h3>
+  </div>
+<div class="cont2">
+  <input class="sty" name="Nume" type="text" placeholder="Nume" required>
+  <input class="sty" name="Prenume" type="text" placeholder="Prenume" required>
+</div>
+<div class="cont3">
+  <h3>Email</h3>
+  <h3>Nr.Telefon</h3>
+</div> 
+<div class="cont4">
+  <input class="sty" name="Email" type="email" placeholder="Email" required>
+  <input class="sty" name="Nr.Telefon" type="tel" placeholder="Nr.Telefon" required>
+</div> 
+<div class="cont5">
+  <h3>Oraș</h3>
+  <h3>Observații</h3>
+</div>
+<div class="cont6">
+  <input class="sty" name="Oraș" type="text" placeholder="Oraș" required>
+  <input class="sty" name="Observații" type="text" placeholder="Observații" required> <br><br>
+</div>
+<br><br>
+  <button class="button" type="submit">Send</button>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Acțiunea caritabilă dorită</label>
-      <textarea style="resize:none" id="message" name="message" rows="4" cols="30" required></textarea>
-
-      <button type="submit">Trimite</button>
-    </form>
+</form>
+</div>
   </body>
 </html>
