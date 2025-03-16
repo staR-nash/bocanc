@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Fake Login</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" type="image/x-icon" href="1-removebg-preview-without-text.PNG">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="inscriereupdated2.css">
+</head>
+<body>
+
+    <div class="nav">
+        <div class="link1">
+            <a href="./home.html" class="rowdies-bold"> Acasă</a>
+            <a href="./oportunitati.html" class="rowdies-bold">Oportunități</a>
+        </div>
+        <div class="link"></div>
+        <div class="link2">
+            <a href="./desprenoi.html" class="rowdies-bold">Despre noi</a>
+            <a href="./contact.html" class="rowdies-bold"> Contact</a>
+            <a href="./harta.html" class="rowdies-bold">Hartă</a>
+        </div>
+    </div>
+
+    <!-- LOGIN & SIGNUP SECTION -->
+    <div class="auth-container">
+        <h2>Fake Account System</h2>
+
+        <!-- Signup Form -->
+        <div id="signup">
+            <h3>Sign Up</h3>
+            <input type="text" id="signupUsername" placeholder="Username" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button onclick="signup()">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login">
+            <h3>Login</h3>
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <!-- Fake Signup Form (Initially Hidden) -->
+    <form class="contact-form" id="fakeSignupForm" method="POST" 
+        action="https://script.google.com/macros/s/AKfycbxheuiihuTfkemDFu-VJSu-CmDyFaNG0HfzwhJR-3OnCemXe_dDGrtkBtU1_Edh_-XE/exec">
+        <h1 style="text-align: center;">Înscrie-te acum</h1>
+        <div class="cont1">
+            <h3>Nume</h3> 
+            <h3>Prenume</h3>
+        </div>
+        <div class="cont2">
+            <input class="sty" name="Nume" type="text" placeholder="Nume" required>
+            <input class="sty" name="Prenume" type="text" placeholder="Prenume" required>
+        </div>
+        <div class="cont3">
+            <h3>Email</h3>
+            <h3>Nr.Telefon</h3>
+        </div> 
+        <div class="cont4">
+            <input class="sty" name="Email" type="email" placeholder="Email" required>
+            <input class="sty" name="Nr.Telefon" type="tel" placeholder="Nr.Telefon" required>
+        </div> 
+        <div class="cont7">
+            <h3>Categoria de voluntari</h3>
+            <h3>Observații</h3>
+        </div>
+        <div class="cont6">
+            <input class="sty" name="Categoria" type="text" placeholder="Categoria de voluntariat" required>
+            <input class="sty" name="Observații" type="text" placeholder="Observații">
+        </div>
+        <br> <br>
+        <button class="button" type="submit">Send</button>
+    </form>
+
+    <script>
+        // Hide the fake signup form initially
+        document.getElementById("fakeSignupForm").style.display = "none";
+
+        // Sign Up Function
+        function signup() {
+            let username = document.getElementById("signupUsername").value;
+            let password = document.getElementById("signupPassword").value;
+
+            if (localStorage.getItem(username)) {
+                document.getElementById("message").innerText = "Username already exists!";
+            } else {
+                localStorage.setItem(username, password);
+                document.getElementById("message").innerText = "Account created! You can now log in.";
+            }
+        }
+
+        // Login Function
+        function login() {
+            let username = document.getElementById("loginUsername").value;
+            let password = document.getElementById("loginPassword").value;
+
+            if (localStorage.getItem(username) === password) {
+                document.getElementById("message").innerText = "Login successful!";
+                alert("Welcome, " + username + "!");
+
+                // Show the fake signup form
+                document.getElementById("fakeSignupForm").style.display = "block";
+
+                // Hide the login and signup sections
+                document.querySelector(".auth-container").style.display = "none";
+            } else {
+                document.getElementById("message").innerText = "Invalid username or password!";
+            }
+        }
+    </script>
+
+</body>
+</html>
