@@ -26,7 +26,7 @@
 
     <!-- LOGIN & SIGNUP SECTION -->
     <div class="auth-container">
-        <h2>Fake Account System</h2>
+        <h2>Account</h2>
 
         <!-- Signup Form -->
         <div id="signup">
@@ -103,7 +103,6 @@
 
             if (localStorage.getItem(username) === password) {
                 document.getElementById("message").innerText = "Login successful!";
-                alert("Welcome, " + username + "!");
 
                 // Show the fake signup form
                 document.getElementById("fakeSignupForm").style.display = "block";
