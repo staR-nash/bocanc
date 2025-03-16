@@ -62,5 +62,10 @@ body {
     flex: 1;
     gap:30px;
   }
+  .cont7{
+    display: flex;
+    flex: 1;
+    gap:575px;
+  }
   
   
