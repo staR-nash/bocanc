@@ -45,6 +45,7 @@ p#sidehero{
     justify-content:center;
     padding:30px 89px;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     height: 330px;
     color:black;
     text-indent:20px;
@@ -65,6 +66,11 @@ p#sidehero{
     color:black;
     text-indent:20px;
     font-size:18px;
+=======
+    color:black;
+    text-indent:20px;
+    font-size:18px;
+>>>>>>> Stashed changes
     height: 180px;
     background-image: radial-gradient(circle at center, #c3b0d7 20%, #b79ad4 50%, #a165dd 100%); 
 }
